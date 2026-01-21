@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background-color: #000;
+  font-family: 'Outfit', sans-serif;
+  color: white;
+}
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#ui-layer {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0.8;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5rem;
+  color: #aaddff;
+}
+
+p {
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #88ccff;
+}
