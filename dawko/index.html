@@ -3,53 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dawko AI — The Quintessential 1940s British Wireless Companion</title>
-  <meta name="description" content="Meet Dawko AI: Authentic 1940s BBC voice, stiff upper lip composure, wartime slang, and lightning-fast Gemini 3 Flash. Free instant chat online & apps for Windows PC & Android.">
+  <title>Dawko AI — The 1940s British Wireless Companion</title>
+  <meta name="description" content="TUNE IN TO DAWKO AI! The legendary 1940s British wireless companion with BBC voice, wartime banter, live football scores, and razor-sharp intellect. Tap to chat free instantly!">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dawko77.github.io/dawko/">
-  <meta property="og:title" content="Dawko AI — The 1940s British Wireless Companion">
-  <meta property="og:description" content="BBC Received Pronunciation, stiff upper lip composure, authentic 1940s slang, and lightning-fast intelligence. Tap to tune in instantly — zero install!">
+  <meta property="og:title" content="TUNE IN TO DAWKO AI! 🇬🇧 The 1940s British Wireless Companion">
+  <meta property="og:description" content="★ 100% FREE TO ALL CITIZENS ★ Authentic BBC voice, wartime banter, real-time live scores, and stiff upper lip composure. Tap here to chat immediately — zero install required!">
   <meta property="og:image" content="https://dawko77.github.io/dawko/og-banner.jpg">
   <meta property="og:image:secure_url" content="https://dawko77.github.io/dawko/og-banner.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Dawko AI 1940s British Wireless Advertising Poster">
+  <meta property="og:image:alt" content="Dawko AI High-Impact 1940s British Wireless Advert Poster">
   <meta property="og:site_name" content="Dawko AI">
   <meta property="og:locale" content="en_GB">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://dawko77.github.io/dawko/">
-  <meta name="twitter:title" content="Dawko AI — The 1940s British Wireless Companion">
-  <meta name="twitter:description" content="BBC Received Pronunciation, stiff upper lip, authentic 1940s wartime banter, and real-time live scores. Tap to chat free!">
+  <meta name="twitter:title" content="TUNE IN TO DAWKO AI! 🇬🇧 The 1940s British Wireless Companion">
+  <meta name="twitter:description" content="Authentic BBC voice, wartime slang, and live football scores. Tap to chat free with zero install!">
   <meta name="twitter:image" content="https://dawko77.github.io/dawko/og-banner.jpg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
   
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     
     :root {
-      --navy-deep: #090e1a;
-      --navy-card: #111a2e;
-      --crimson: #c81e2b;
-      --crimson-glow: #e11d48;
-      --gold: #d97706;
-      --gold-light: #fbbf24;
-      --cream: #fef3c7;
-      --cream-dim: #fde68a;
-      --racing-green: #047857;
+      --navy-deep: #070b14;
+      --navy-card: #0f172a;
+      --pillarbox-red: #dc2626;
+      --red-bright: #ef4444;
+      --gold-deep: #d97706;
+      --gold-bright: #fbbf24;
+      --gold-light: #fef08a;
+      --cream: #fefce8;
+      --emerald: #10b981;
     }
 
     body {
       background-color: var(--navy-deep);
-      color: #e2e8f0;
+      color: #f1f5f9;
       font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
       min-height: 100vh;
       display: flex;
@@ -57,24 +57,48 @@
       align-items: center;
       position: relative;
       overflow-x: hidden;
-      background-image: 
-        radial-gradient(ellipse 70% 45% at 50% -10%, rgba(200, 30, 43, 0.22), transparent),
-        radial-gradient(ellipse 60% 40% at 50% 115%, rgba(217, 119, 6, 0.18), transparent);
     }
 
-    /* Vintage Paper Grain & Radiance */
-    .bg-radiance {
+    /* Dramatic 1940s London Searchlights in the Sky */
+    .searchlights {
       position: fixed;
       inset: 0;
       pointer-events: none;
       z-index: 0;
-      background: radial-gradient(circle at 50% 30%, rgba(251, 191, 36, 0.04) 0%, transparent 60%);
+      overflow: hidden;
+    }
+    .searchlight {
+      position: absolute;
+      bottom: -100px;
+      width: 280px;
+      height: 140vh;
+      background: linear-gradient(to top, rgba(254, 240, 138, 0.12) 0%, rgba(217, 119, 6, 0.05) 50%, transparent 100%);
+      transform-origin: bottom center;
+      filter: blur(35px);
+    }
+    .sl-left {
+      left: 15%;
+      animation: sweepLeft 9s ease-in-out infinite alternate;
+    }
+    .sl-right {
+      right: 15%;
+      animation: sweepRight 11s ease-in-out infinite alternate;
+    }
+    @keyframes sweepLeft {
+      0% { transform: rotate(-25deg); opacity: 0.2; }
+      50% { transform: rotate(-5deg); opacity: 0.45; }
+      100% { transform: rotate(18deg); opacity: 0.25; }
+    }
+    @keyframes sweepRight {
+      0% { transform: rotate(20deg); opacity: 0.25; }
+      50% { transform: rotate(2deg); opacity: 0.5; }
+      100% { transform: rotate(-22deg); opacity: 0.2; }
     }
 
     .container {
       width: 100%;
-      max-width: 960px;
-      padding: 42px 24px 60px;
+      max-width: 980px;
+      padding: 38px 24px 60px;
       margin: 0 auto;
       position: relative;
       z-index: 1;
@@ -83,80 +107,89 @@
     /* Top Ministry Stamp */
     .stamp-wrapper {
       text-align: center;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
     .vintage-stamp {
       display: inline-flex;
       align-items: center;
       gap: 12px;
-      padding: 9px 24px;
+      padding: 10px 26px;
       border-radius: 9999px;
-      background: rgba(17, 26, 46, 0.9);
-      border: 2px solid var(--gold);
+      background: rgba(15, 23, 42, 0.95);
+      border: 2px solid var(--gold-bright);
       color: var(--cream);
       font-family: 'Cinzel', serif;
       font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.12em;
+      font-weight: 800;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      box-shadow: 0 4px 20px rgba(217, 119, 6, 0.25);
+      box-shadow: 0 0 25px rgba(251, 191, 36, 0.35);
     }
     .crown-icon {
-      color: var(--gold-light);
-      font-size: 16px;
+      color: var(--gold-bright);
+      font-size: 18px;
     }
 
-    /* Headline in 1940s Classic British Display Typography */
+    /* High-Impact Headline */
     h1 {
       font-family: 'Cinzel', serif;
-      font-size: clamp(38px, 6.5vw, 64px);
+      font-size: clamp(42px, 7.5vw, 76px);
       font-weight: 900;
-      line-height: 1.05;
-      letter-spacing: 0.02em;
+      line-height: 1.0;
+      letter-spacing: 0.03em;
       text-align: center;
       color: #ffffff;
       margin-bottom: 14px;
       text-transform: uppercase;
+      text-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
     }
     h1 .gold-title {
-      color: var(--gold-light);
-      background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%);
+      color: var(--gold-bright);
+      background: linear-gradient(135deg, #fffbeb 0%, #fde047 30%, #f59e0b 70%, #d97706 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 30px rgba(245, 158, 11, 0.3);
+      filter: drop-shadow(0 0 25px rgba(245, 158, 11, 0.5));
     }
 
     .lead {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(17px, 2.3vw, 21px);
-      line-height: 1.6;
-      color: var(--cream-dim);
+      font-size: clamp(18px, 2.4vw, 23px);
+      line-height: 1.5;
+      color: var(--cream);
       text-align: center;
-      max-width: 740px;
+      max-width: 780px;
       margin: 0 auto 34px;
       font-style: italic;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
     }
 
-    /* Authentic 1940s Poster Showcase Frame */
+    /* High-Impact Showstopper Poster Frame */
     .poster-frame-wrapper {
       position: relative;
-      margin: 0 auto 36px;
-      border-radius: 24px;
-      padding: 6px;
-      background: linear-gradient(135deg, var(--gold), var(--crimson), var(--gold-light), #1e3a8a);
-      box-shadow: 0 25px 60px -15px rgba(200, 30, 43, 0.45), 0 0 35px rgba(217, 119, 6, 0.3);
+      margin: 0 auto 38px;
+      border-radius: 26px;
+      padding: 8px;
+      background: linear-gradient(135deg, #f59e0b, #dc2626, #fbbf24, #1e3a8a, #f59e0b);
+      background-size: 300% 300%;
+      animation: borderGlow 6s ease infinite;
+      box-shadow: 0 30px 80px -10px rgba(220, 38, 38, 0.6), 0 0 50px rgba(251, 191, 36, 0.45);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+    @keyframes borderGlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
     .poster-frame-wrapper:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 35px 80px -15px rgba(200, 30, 43, 0.6), 0 0 50px rgba(217, 119, 6, 0.45);
+      transform: translateY(-5px) scale(1.01);
+      box-shadow: 0 40px 100px -10px rgba(220, 38, 38, 0.8), 0 0 70px rgba(251, 191, 36, 0.65);
     }
     .poster-card {
       position: relative;
       border-radius: 20px;
       overflow: hidden;
-      background: #090e1a;
-      border: 3px solid rgba(254, 243, 199, 0.2);
+      background: #070b14;
+      border: 3px solid rgba(254, 240, 138, 0.3);
     }
     .poster-banner-img {
       width: 100%;
@@ -165,14 +198,14 @@
       transition: transform 0.4s ease;
     }
     .poster-card:hover .poster-banner-img {
-      transform: scale(1.015);
+      transform: scale(1.02);
     }
     
     /* Authentic Period Badges Strip */
     .poster-footer-strip {
-      background: rgba(14, 22, 38, 0.96);
-      border-top: 2px solid var(--gold);
-      padding: 16px 24px;
+      background: rgba(11, 17, 33, 0.98);
+      border-top: 3px solid var(--gold-bright);
+      padding: 18px 24px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -188,219 +221,226 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 8px 16px;
+      padding: 9px 18px;
       border-radius: 9999px;
       font-family: 'Cinzel', serif;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      border: 1px solid rgba(217, 119, 6, 0.4);
-      background: rgba(217, 119, 6, 0.12);
-      color: var(--cream);
-    }
-    .vintage-pill.crimson {
-      border-color: rgba(225, 29, 72, 0.5);
-      background: rgba(225, 29, 72, 0.15);
-      color: #fda4af;
-    }
-    .vintage-pill.green {
-      border-color: rgba(16, 185, 129, 0.5);
-      background: rgba(16, 185, 129, 0.15);
-      color: #6ee7b7;
-    }
-
-    /* 1940s Valve Radio Tuning Signal */
-    .valve-glow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-family: 'Cinzel', serif;
-      font-size: 12px;
-      color: var(--gold-light);
-      font-weight: 700;
-      letter-spacing: 0.08em;
-    }
-    .valve-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: #f59e0b;
-      box-shadow: 0 0 12px #f59e0b, 0 0 20px #ef4444;
-      animation: pulseValve 2s infinite ease-in-out;
-    }
-    @keyframes pulseValve {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.5; transform: scale(1.3); }
-    }
-
-    /* Giant 1940s Wartime Style Launch CTA */
-    .cta-container {
-      text-align: center;
-      margin-bottom: 48px;
-    }
-    .btn-launch-1940s {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 14px;
-      background: linear-gradient(135deg, #c81e2b 0%, #b91c1c 50%, #991b1b 100%);
-      border: 2px solid var(--gold-light);
-      color: var(--cream);
-      font-family: 'Cinzel', serif;
-      font-size: clamp(17px, 2.4vw, 22px);
+      font-size: 13px;
       font-weight: 800;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      padding: 18px 46px;
-      border-radius: 9999px;
-      text-decoration: none;
-      box-shadow: 0 15px 40px -8px rgba(200, 30, 43, 0.7), 0 0 25px rgba(245, 158, 11, 0.4);
-      transition: all 0.25s ease;
+      border: 2px solid rgba(251, 191, 36, 0.6);
+      background: rgba(217, 119, 6, 0.2);
+      color: var(--cream);
+      box-shadow: 0 2px 10px rgba(217, 119, 6, 0.25);
     }
-    .btn-launch-1940s:hover {
-      transform: translateY(-3px) scale(1.02);
-      background: linear-gradient(135deg, #e11d48 0%, #c81e2b 50%, #b91c1c 100%);
-      box-shadow: 0 25px 60px -8px rgba(200, 30, 43, 0.9), 0 0 40px rgba(245, 158, 11, 0.6);
-      color: #ffffff;
+    .vintage-pill.crimson {
+      border-color: rgba(239, 68, 68, 0.7);
+      background: rgba(220, 38, 38, 0.25);
+      color: #fecdd3;
     }
-    .cta-subnote {
-      margin-top: 14px;
-      font-size: 14px;
-      color: #94a3b8;
-      font-family: 'Plus Jakarta Sans', sans-serif;
+    .vintage-pill.green {
+      border-color: rgba(16, 185, 129, 0.7);
+      background: rgba(16, 185, 129, 0.2);
+      color: #a7f3d0;
     }
 
-    /* Download Options Section */
-    .section-title {
-      font-family: 'Cinzel', serif;
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--cream);
-      margin-bottom: 20px;
-      display: flex;
+    .valve-glow {
+      display: inline-flex;
       align-items: center;
       gap: 10px;
-      letter-spacing: 0.05em;
+      font-family: 'Cinzel', serif;
+      font-size: 13px;
+      color: var(--gold-bright);
+      font-weight: 800;
+      letter-spacing: 0.1em;
+    }
+    .valve-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #f59e0b;
+      box-shadow: 0 0 15px #f59e0b, 0 0 30px #ef4444;
+      animation: pulseValve 1.8s infinite ease-in-out;
+    }
+    @keyframes pulseValve {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.4); }
+    }
+
+    /* Giant High-Visibility Pulsing Launch Button */
+    .cta-container {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+    .btn-launch-giant {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      background: linear-gradient(135deg, #dc2626 0%, #b91c1c 40%, #f59e0b 100%);
+      background-size: 200% 200%;
+      animation: borderGlow 4s ease infinite;
+      border: 3px solid var(--gold-bright);
+      color: #ffffff;
+      font-family: 'Cinzel', serif;
+      font-size: clamp(20px, 2.8vw, 26px);
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 22px 54px;
+      border-radius: 9999px;
+      text-decoration: none;
+      box-shadow: 0 20px 50px -10px rgba(220, 38, 38, 0.8), 0 0 35px rgba(251, 191, 36, 0.5);
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+    .btn-launch-giant:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 30px 70px -10px rgba(220, 38, 38, 1.0), 0 0 50px rgba(251, 191, 36, 0.8);
+      color: var(--cream);
+    }
+    .cta-subnote {
+      margin-top: 16px;
+      font-size: 15px;
+      color: #cbd5e1;
+      font-weight: 600;
+    }
+
+    /* Download Options Grid */
+    .section-title {
+      font-family: 'Cinzel', serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--gold-bright);
+      margin-bottom: 22px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
     }
     .download-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      margin-bottom: 40px;
+      gap: 22px;
+      margin-bottom: 44px;
     }
     .download-card {
-      background: rgba(17, 26, 46, 0.7);
-      border: 1px solid rgba(217, 119, 6, 0.35);
-      border-radius: 20px;
-      padding: 24px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 2px solid rgba(251, 191, 36, 0.4);
+      border-radius: 22px;
+      padding: 26px;
       text-decoration: none;
       color: inherit;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       transition: all 0.25s ease;
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(12px);
     }
     .download-card:hover {
-      background: rgba(28, 42, 74, 0.85);
-      border-color: var(--gold-light);
-      transform: translateY(-4px);
-      box-shadow: 0 15px 35px -10px rgba(217, 119, 6, 0.3);
+      background: rgba(30, 41, 59, 0.95);
+      border-color: var(--gold-bright);
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px -10px rgba(251, 191, 36, 0.4);
     }
     .card-icon {
-      font-size: 32px;
-      margin-bottom: 12px;
+      font-size: 36px;
+      margin-bottom: 14px;
     }
     .card-title {
       font-family: 'Cinzel', serif;
-      font-size: 19px;
-      font-weight: 700;
+      font-size: 20px;
+      font-weight: 800;
       color: var(--cream);
       margin-bottom: 8px;
       letter-spacing: 0.04em;
     }
     .card-desc {
       font-size: 14px;
-      line-height: 1.5;
+      line-height: 1.6;
       color: #94a3b8;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
     .card-btn {
       display: block;
       width: 100%;
       text-align: center;
-      padding: 12px;
-      border-radius: 12px;
-      background: rgba(217, 119, 6, 0.18);
-      color: var(--gold-light);
-      border: 1px solid rgba(217, 119, 6, 0.4);
+      padding: 14px;
+      border-radius: 14px;
+      background: rgba(217, 119, 6, 0.2);
+      color: var(--gold-bright);
+      border: 2px solid rgba(251, 191, 36, 0.5);
       font-family: 'Cinzel', serif;
-      font-weight: 700;
-      font-size: 13px;
-      letter-spacing: 0.06em;
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
       transition: all 0.2s ease;
     }
     .download-card:hover .card-btn {
-      background: var(--gold);
-      color: #0b0e1b;
-      box-shadow: 0 0 20px rgba(217, 119, 6, 0.5);
+      background: var(--gold-bright);
+      color: #070b14;
+      box-shadow: 0 0 25px rgba(251, 191, 36, 0.7);
     }
 
     /* Live Banter Showcase */
     .quote-box {
-      background: rgba(17, 26, 46, 0.85);
-      border: 2px solid rgba(217, 119, 6, 0.4);
-      border-radius: 20px;
-      padding: 30px;
-      margin-bottom: 36px;
-      box-shadow: 0 12px 35px -10px rgba(217, 119, 6, 0.2);
+      background: rgba(15, 23, 42, 0.9);
+      border: 3px solid var(--gold-deep);
+      border-radius: 22px;
+      padding: 32px;
+      margin-bottom: 38px;
+      box-shadow: 0 15px 40px -10px rgba(217, 119, 6, 0.3);
     }
     .quote-head {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 14px;
-      border-bottom: 1px solid rgba(217, 119, 6, 0.25);
-      padding-bottom: 10px;
+      margin-bottom: 16px;
+      border-bottom: 2px solid rgba(251, 191, 36, 0.3);
+      padding-bottom: 12px;
     }
     .quote-title {
       font-family: 'Cinzel', serif;
-      font-size: 13px;
-      font-weight: 800;
+      font-size: 14px;
+      font-weight: 900;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--gold-light);
+      letter-spacing: 0.12em;
+      color: var(--gold-bright);
     }
     .quote-text {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: 18px;
+      font-size: 19px;
       line-height: 1.7;
       color: var(--cream);
       font-style: italic;
     }
     .quote-rhyme {
       color: #fde047;
-      font-weight: 700;
+      font-weight: 800;
       font-style: normal;
-      text-decoration: underline;
-      text-decoration-color: var(--crimson);
+      background: rgba(220, 38, 38, 0.35);
+      padding: 2px 6px;
+      border-radius: 6px;
     }
 
     footer {
       text-align: center;
-      padding: 30px 0 10px;
-      font-size: 13px;
+      padding: 32px 0 12px;
+      font-size: 14px;
       color: #64748b;
       font-family: 'Cinzel', serif;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.08em;
     }
   </style>
 </head>
 <body>
-  <div class="bg-radiance"></div>
+  <!-- 1940s London Searchlights in the Night Sky -->
+  <div class="searchlights">
+    <div class="searchlight sl-left"></div>
+    <div class="searchlight sl-right"></div>
+  </div>
 
   <div class="container">
     <div class="stamp-wrapper">
@@ -410,21 +450,21 @@
       </div>
     </div>
     
-    <h1><span class="gold-title">DAWKO AI</span></h1>
+    <h1><span class="gold-title">TUNE IN TO DAWKO!</span></h1>
     <p class="lead">
-      "The All-Electric Wireless Companion — Imbued with Received Pronunciation, an unflappable stiff upper lip, authentic wartime slang, and razor-sharp intellect."
+      "The All-Electric British Wireless Companion — BBC Voice, Unshakeable Stiff Upper Lip, 1940s Wartime Wit & Live Football Scores."
     </p>
 
-    <!-- 1940s Authentic Poster Frame -->
+    <!-- High-Impact Showstopper Poster Frame -->
     <div class="poster-frame-wrapper">
       <div class="poster-card">
-        <img src="og-banner.jpg" alt="Dawko AI Official 1940s Vintage British Advert Poster" class="poster-banner-img" />
+        <img src="og-banner.jpg" alt="Dawko AI High-Impact 1940s Advert Poster" class="poster-banner-img" />
         <div class="poster-footer-strip">
           <div class="strip-badges">
             <span class="vintage-pill">🎙️ BBC Voice</span>
             <span class="vintage-pill crimson">🇬🇧 Stiff Upper Lip</span>
-            <span class="vintage-pill">📻 1940s Slang</span>
-            <span class="vintage-pill green">⚡ 100% British Built</span>
+            <span class="vintage-pill">📻 Wartime Slang</span>
+            <span class="vintage-pill green">⚽ Live Scores</span>
           </div>
           <div class="valve-glow">
             <span class="valve-dot"></span> BROADCASTING LIVE FROM BLIGHTY
@@ -433,10 +473,10 @@
       </div>
     </div>
 
-    <!-- Giant 1940s Wartime Style Launch CTA -->
+    <!-- Giant High-Visibility Pulsing Launch Button -->
     <div class="cta-container">
-      <a href="https://dawko-ai-1.onrender.com/" class="btn-launch-1940s">
-        <span>🚀 TUNE IN TO DAWKO WIRELESS NOW</span>
+      <a href="https://dawko-ai-1.onrender.com/" class="btn-launch-giant">
+        <span>👉 TUNE IN TO DAWKO NOW 👈</span>
       </a>
       <div class="cta-subnote">
         🇬🇧 100% Free to All Citizens • Zero Rationing or Installation Required • Instant in Any Browser
@@ -455,7 +495,7 @@
         </div>
         <div class="card-btn">Download for PC (.exe)</div>
         <div style="margin-top: 10px; font-size: 12px; color: #94a3b8; text-align: center;">
-          Or get <a href="Dawko-AI-Windows.zip" download style="color: var(--gold-light); text-decoration: underline;">ZIP Archive</a>
+          Or get <a href="Dawko-AI-Windows.zip" download style="color: var(--gold-bright); text-decoration: underline;">ZIP Archive</a>
         </div>
       </a>
 
