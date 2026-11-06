@@ -4,16 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dawko AI — The Quintessential British AI Companion</title>
-  <meta name="description" content="Meet Dawko AI: BBC Received Pronunciation, stiff upper lip composure, 1940s wartime slang, and lightning-fast Gemini 3 Flash. Free download for Windows PC & Android.">
+  <meta name="description" content="Meet Dawko AI: BBC Received Pronunciation, stiff upper lip composure, 1940s wartime slang, and lightning-fast Gemini 3 Flash. Instant free chat online & apps for Windows PC & Android.">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dawko77.github.io/dawko/">
   <meta property="og:title" content="Dawko AI — The Quintessential British AI Companion">
-  <meta property="og:description" content="BBC Received Pronunciation, stiff upper lip composure, 1940s wartime slang, and lightning-fast Gemini 3 Flash. Free download for Windows PC & Android.">
+  <meta property="og:description" content="BBC Received Pronunciation, stiff upper lip composure, 1940s wartime slang, and lightning-fast Gemini 3 Flash. Tap to chat instantly — zero install!">
   <meta property="og:image" content="https://dawko77.github.io/dawko/og-banner.png">
+  <meta property="og:image:secure_url" content="https://dawko77.github.io/dawko/og-banner.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Dawko AI Dynamic Cyber Broadcast Advert">
   <meta property="og:site_name" content="Dawko AI">
   <meta property="og:locale" content="en_GB">
 
@@ -21,79 +24,312 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://dawko77.github.io/dawko/">
   <meta name="twitter:title" content="Dawko AI — The Quintessential British AI Companion">
-  <meta name="twitter:description" content="BBC Received Pronunciation, stiff upper lip, 1940s wartime slang, and lightning-fast responses. Free download for PC and Android.">
+  <meta name="twitter:description" content="BBC Received Pronunciation, stiff upper lip, 1940s wartime slang, and lightning-fast responses. Tap to chat free!">
   <meta name="twitter:image" content="https://dawko77.github.io/dawko/og-banner.png">
 
-  <!-- Fonts & Styles -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    :root {
+      --primary: #00f0ff;
+      --magenta: #ff007f;
+      --purple: #8b5cf6;
+      --amber: #f59e0b;
+      --emerald: #10b981;
+    }
+
     body {
-      background-color: #07090e;
+      background-color: #060813;
       color: #e2e8f0;
       font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-image: 
-        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(56, 189, 248, 0.15), transparent),
-        radial-gradient(ellipse 60% 40% at 50% 120%, rgba(30, 58, 138, 0.2), transparent);
+      position: relative;
+      overflow-x: hidden;
     }
+
+    /* Dynamic Multi-Color Animated Cosmic Background */
+    .bg-mesh {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      opacity: 0.35;
+      animation: floatPulse 12s ease-in-out infinite alternate;
+    }
+    .blob-1 {
+      width: 550px;
+      height: 550px;
+      background: radial-gradient(circle, #00f0ff 0%, #3b82f6 100%);
+      top: -150px;
+      left: -100px;
+      animation-delay: 0s;
+    }
+    .blob-2 {
+      width: 650px;
+      height: 650px;
+      background: radial-gradient(circle, #ff007f 0%, #a855f7 100%);
+      top: 20%;
+      right: -200px;
+      animation-delay: -3s;
+    }
+    .blob-3 {
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, #f59e0b 0%, #ef4444 100%);
+      bottom: -100px;
+      left: 15%;
+      animation-delay: -6s;
+    }
+    .blob-4 {
+      width: 450px;
+      height: 450px;
+      background: radial-gradient(circle, #10b981 0%, #06b6d4 100%);
+      bottom: 25%;
+      left: -150px;
+      animation-delay: -9s;
+    }
+
+    @keyframes floatPulse {
+      0% { transform: translate(0, 0) scale(1); opacity: 0.3; }
+      50% { transform: translate(40px, 30px) scale(1.15); opacity: 0.45; }
+      100% { transform: translate(-30px, 50px) scale(0.95); opacity: 0.35; }
+    }
+
     .container {
       width: 100%;
-      max-width: 900px;
-      padding: 48px 24px;
+      max-width: 960px;
+      padding: 42px 24px 60px;
       margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Top Badge */
+    .top-badge-wrapper {
+      text-align: center;
+      margin-bottom: 20px;
     }
     .badge {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      padding: 6px 14px;
+      gap: 10px;
+      padding: 8px 18px;
       border-radius: 9999px;
-      background: rgba(56, 189, 248, 0.1);
-      border: 1px solid rgba(56, 189, 248, 0.25);
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(0, 240, 255, 0.4);
       color: #38bdf8;
       font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.04em;
+      font-weight: 700;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
-      margin-bottom: 24px;
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
+      backdrop-filter: blur(12px);
     }
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #00f0ff;
+      box-shadow: 0 0 10px #00f0ff;
+      animation: pingDot 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+    @keyframes pingDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.3); }
+    }
+
     h1 {
       font-family: 'Outfit', sans-serif;
-      font-size: clamp(38px, 6vw, 58px);
-      font-weight: 800;
-      line-height: 1.1;
-      letter-spacing: -0.02em;
+      font-size: clamp(40px, 7vw, 68px);
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      text-align: center;
       color: #ffffff;
       margin-bottom: 16px;
     }
-    h1 span {
-      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+    h1 .glow-text {
+      background: linear-gradient(135deg, #00f0ff 0%, #ff007f 50%, #f59e0b 100%);
+      background-size: 200% 200%;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      animation: gradientShift 6s ease infinite;
     }
-    p.lead {
-      font-size: clamp(17px, 2.5vw, 20px);
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .lead {
+      font-size: clamp(16px, 2.2vw, 20px);
       line-height: 1.6;
+      color: #cbd5e1;
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 32px;
+    }
+
+    /* Dynamic Showcase Advert Card */
+    .hero-card-wrapper {
+      position: relative;
+      margin: 0 auto 36px;
+      border-radius: 28px;
+      padding: 4px;
+      background: linear-gradient(135deg, #00f0ff, #ff007f, #f59e0b, #10b981);
+      background-size: 300% 300%;
+      animation: gradientShift 8s ease infinite;
+      box-shadow: 0 20px 60px -15px rgba(0, 240, 255, 0.4), 0 0 40px rgba(255, 0, 128, 0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hero-card-wrapper:hover {
+      transform: translateY(-4px) scale(1.01);
+      box-shadow: 0 30px 80px -15px rgba(0, 240, 255, 0.6), 0 0 60px rgba(255, 0, 128, 0.4);
+    }
+    .hero-card {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      background: #0b0e1b;
+    }
+    .hero-banner-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .hero-card:hover .hero-banner-img {
+      transform: scale(1.02);
+    }
+    
+    /* Interactive Floating Cyber Badges */
+    .card-footer-pills {
+      background: rgba(11, 14, 27, 0.92);
+      backdrop-filter: blur(14px);
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 18px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .pill-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .cyber-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      border: 1px solid transparent;
+      transition: transform 0.2s ease;
+    }
+    .cyber-pill:hover { transform: translateY(-2px); }
+    .pill-cyan { background: rgba(0, 240, 255, 0.12); color: #38bdf8; border-color: rgba(0, 240, 255, 0.35); }
+    .pill-pink { background: rgba(255, 0, 128, 0.12); color: #f472b6; border-color: rgba(255, 0, 128, 0.35); }
+    .pill-amber { background: rgba(245, 158, 11, 0.12); color: #fbbf24; border-color: rgba(245, 158, 11, 0.35); }
+    .pill-green { background: rgba(16, 185, 129, 0.12); color: #34d399; border-color: rgba(16, 185, 129, 0.35); }
+
+    /* Animated Soundwave Equalizer */
+    .live-soundwave {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      height: 24px;
+    }
+    .wave-bar {
+      width: 4px;
+      background: linear-gradient(180deg, #00f0ff, #ff007f);
+      border-radius: 2px;
+      animation: equalizer 1.2s ease-in-out infinite alternate;
+    }
+    .wb-1 { height: 10px; animation-delay: 0.1s; }
+    .wb-2 { height: 22px; animation-delay: 0.3s; }
+    .wb-3 { height: 14px; animation-delay: 0.15s; }
+    .wb-4 { height: 24px; animation-delay: 0.4s; }
+    .wb-5 { height: 8px;  animation-delay: 0.25s; }
+
+    @keyframes equalizer {
+      0% { transform: scaleY(0.3); }
+      100% { transform: scaleY(1.1); }
+    }
+
+    /* Giant Dynamic Primary CTA Button */
+    .cta-container {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .btn-launch-giant {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      background: linear-gradient(135deg, #00f0ff, #a855f7, #ff007f);
+      background-size: 200% 200%;
+      animation: gradientShift 4s ease infinite;
+      color: #ffffff;
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(18px, 2.5vw, 24px);
+      font-weight: 800;
+      padding: 18px 42px;
+      border-radius: 9999px;
+      text-decoration: none;
+      box-shadow: 0 15px 40px -8px rgba(0, 240, 255, 0.6), 0 0 30px rgba(255, 0, 128, 0.4);
+      transition: all 0.25s ease;
+      letter-spacing: -0.01em;
+    }
+    .btn-launch-giant:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 25px 60px -8px rgba(0, 240, 255, 0.8), 0 0 50px rgba(255, 0, 128, 0.6);
+    }
+    .cta-subnote {
+      margin-top: 12px;
+      font-size: 14px;
       color: #94a3b8;
-      max-width: 680px;
-      margin-bottom: 36px;
+      font-weight: 500;
+    }
+
+    /* Download Options Grid */
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
     .download-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px;
-      margin-bottom: 48px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
     }
     .download-card {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 20px;
       padding: 24px;
       text-decoration: none;
@@ -102,188 +338,161 @@
       flex-direction: column;
       justify-content: space-between;
       transition: all 0.25s ease;
-      position: relative;
-      overflow: hidden;
+      backdrop-filter: blur(10px);
     }
     .download-card:hover {
-      background: rgba(255, 255, 255, 0.06);
-      border-color: rgba(56, 189, 248, 0.4);
-      transform: translateY(-3px);
-      box-shadow: 0 12px 30px -10px rgba(56, 189, 248, 0.2);
+      background: rgba(30, 41, 59, 0.8);
+      border-color: rgba(0, 240, 255, 0.5);
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px -10px rgba(0, 240, 255, 0.3);
     }
     .card-icon {
-      font-size: 28px;
-      margin-bottom: 14px;
+      font-size: 32px;
+      margin-bottom: 12px;
     }
     .card-title {
       font-family: 'Outfit', sans-serif;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 700;
       color: #ffffff;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
     .card-desc {
-      font-size: 13px;
-      color: #94a3b8;
+      font-size: 14px;
       line-height: 1.5;
-      margin-bottom: 18px;
+      color: #94a3b8;
+      margin-bottom: 20px;
     }
     .card-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 10px 18px;
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 12px;
       border-radius: 12px;
-      background: #0284c7;
-      color: #ffffff;
-      font-size: 13px;
-      font-weight: 600;
-      transition: background 0.2s;
+      background: rgba(0, 240, 255, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(0, 240, 255, 0.3);
+      font-weight: 700;
+      font-size: 14px;
+      transition: all 0.2s ease;
     }
     .download-card:hover .card-btn {
-      background: #38bdf8;
+      background: #00f0ff;
       color: #04111d;
-    }
-    .card-btn.secondary {
-      background: rgba(255, 255, 255, 0.08);
-      color: #cbd5e1;
-    }
-    .download-card:hover .card-btn.secondary {
-      background: rgba(255, 255, 255, 0.15);
-      color: #ffffff;
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
     }
 
-    /* Showcase Quote */
+    /* Live Banter Showcase */
     .quote-box {
-      background: rgba(15, 23, 42, 0.6);
-      border: 1px solid rgba(56, 189, 248, 0.2);
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(0, 240, 255, 0.3);
       border-radius: 20px;
       padding: 28px;
-      margin-bottom: 48px;
-      position: relative;
+      margin-bottom: 36px;
+      box-shadow: 0 10px 30px -10px rgba(0, 240, 255, 0.15);
+      backdrop-filter: blur(12px);
     }
-    .quote-title {
-      font-family: 'Outfit', sans-serif;
-      font-size: 13px;
-      font-weight: 700;
-      color: #38bdf8;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 12px;
-    }
-    .quote-text {
-      font-size: 16px;
-      line-height: 1.7;
-      color: #cbd5e1;
-      font-style: italic;
-    }
-    .quote-rhyme {
-      color: #fcd34d;
-      font-weight: 700;
-      font-style: normal;
-      background: rgba(251, 191, 36, 0.1);
-      padding: 2px 6px;
-      border-radius: 6px;
-    }
-
-    /* Feature List */
-    .features-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      margin-bottom: 48px;
-    }
-    .feature-item {
-      display: flex;
-      gap: 12px;
-    }
-    .feature-icon {
-      font-size: 20px;
-      flex-shrink: 0;
-    }
-    .feature-head {
-      font-size: 14px;
-      font-weight: 700;
-      color: #f1f5f9;
-      margin-bottom: 4px;
-    }
-    .feature-sub {
-      font-size: 12px;
-      color: #94a3b8;
-      line-height: 1.5;
-    }
-
-    /* Share Section */
-    .share-bar {
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      border-radius: 16px;
-      padding: 20px;
+    .quote-head {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-wrap: gap;
-      gap: 16px;
+      margin-bottom: 14px;
     }
-    .share-info {
+    .quote-title {
       font-size: 13px;
-      color: #94a3b8;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #38bdf8;
     }
-    .share-buttons {
-      display: flex;
-      gap: 10px;
+    .quote-text {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #e2e8f0;
+      font-style: italic;
     }
-    .btn-fb {
-      background: #1877F2;
-      color: white;
-      padding: 8px 16px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: opacity 0.2s;
+    .quote-rhyme {
+      color: #fbbf24;
+      font-weight: 700;
+      font-style: normal;
     }
-    .btn-fb:hover { opacity: 0.9; }
 
     footer {
       text-align: center;
-      padding: 32px 0 16px;
-      font-size: 12px;
+      padding: 30px 0 10px;
+      font-size: 13px;
       color: #64748b;
     }
   </style>
 </head>
 <body>
+  <!-- Dynamic Multi-Color Background Blobs -->
+  <div class="bg-mesh">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+  </div>
+
   <div class="container">
-    <div class="badge">🦊 Official 1940s Wireless Edition</div>
+    <div class="top-badge-wrapper">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        Official 1940s Wireless Broadcast • Gemini 3 Flash
+      </div>
+    </div>
     
-    <h1>Meet <span>Dawko AI</span></h1>
+    <h1>Meet <span class="glow-text">Dawko AI</span></h1>
     <p class="lead">
       The quintessential British conversational companion. Imbued with Received Pronunciation, an unflappable stiff upper lip, authentic 1940s wartime slang, and razor-sharp intellect.
     </p>
 
-    <!-- Instant Web Launch CTA -->
-    <div style="text-align: center; margin-bottom: 32px;">
-      <a href="https://dawko-ai-1.onrender.com/" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: linear-gradient(135deg, #0ea5e9, #38bdf8); color: #04111d; font-size: 1.05rem; font-weight: 700; padding: 14px 28px; border-radius: 9999px; text-decoration: none; box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.4); transition: transform 0.2s;">
-        <span>🚀 Launch Dawko Web App Now</span>
-        <span style="font-size: 0.85rem; font-weight: 500; opacity: 0.85;">(Zero Install • Any Device)</span>
-      </a>
+    <!-- Dynamic Advert Showcase Card -->
+    <div class="hero-card-wrapper">
+      <div class="hero-card">
+        <img src="og-banner.png" alt="Dawko AI Official Advert" class="hero-banner-img" />
+        <div class="card-footer-pills">
+          <div class="pill-group">
+            <span class="cyber-pill pill-cyan">🎙️ BBC Voice</span>
+            <span class="cyber-pill pill-pink">🇬🇧 1940s Slang</span>
+            <span class="cyber-pill pill-amber">⚡ Gemini 3 Flash</span>
+            <span class="cyber-pill pill-green">⚽ Live Scores</span>
+          </div>
+          <div class="live-soundwave">
+            <span class="wave-bar wb-1"></span>
+            <span class="wave-bar wb-2"></span>
+            <span class="wave-bar wb-3"></span>
+            <span class="wave-bar wb-4"></span>
+            <span class="wave-bar wb-5"></span>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Download Options -->
+    <!-- Giant Dynamic Instant Launch CTA Button -->
+    <div class="cta-container">
+      <a href="https://dawko-ai-1.onrender.com/" class="btn-launch-giant">
+        <span>🚀 Launch Dawko Web App Now</span>
+      </a>
+      <div class="cta-subnote">
+        ✨ 100% Free • Zero Installation • Works Instantly on iPhone, Android, Mac & PC
+      </div>
+    </div>
+
+    <!-- Download Options Section -->
+    <div class="section-title">📦 Dedicated App Installers (Optional)</div>
     <div class="download-grid">
       <!-- Windows PC -->
       <a href="Dawko-AI-Windows.exe" download="Dawko-AI-Windows.exe" class="download-card">
         <div>
           <div class="card-icon">💻</div>
           <div class="card-title">Windows PC App</div>
-          <div class="card-desc">Standalone desktop application (.exe) for Windows 10 & 11. No browser bars or clutter.</div>
+          <div class="card-desc">Standalone desktop application (.exe) for Windows 10 & 11. No browser clutter.</div>
         </div>
         <div class="card-btn">Download for PC (.exe)</div>
+        <div style="margin-top: 10px; font-size: 12px; color: #94a3b8; text-align: center;">
+          Or get <a href="Dawko-AI-Windows.zip" download style="color: #38bdf8; text-decoration: underline;">ZIP archive</a>
+        </div>
       </a>
 
       <!-- Android -->
@@ -301,75 +510,30 @@
         <div>
           <div class="card-icon">🍏</div>
           <div class="card-title">Apple iPhone & Mac</div>
-          <div class="card-desc">Instant PWA install: open this page in Safari, tap <strong>Share</strong> &rarr; <strong>"Add to Home Screen"</strong>.</div>
+          <div class="card-desc">Instant PWA install: tap <strong>Share</strong> in Safari &rarr; choose <strong>"Add to Home Screen"</strong>.</div>
         </div>
-        <div class="card-btn secondary">Zero Download Required</div>
-      </div>
-    </div>
-
-    <!-- Windows SmartScreen Help Tip -->
-    <div style="background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 14px; padding: 16px 22px; margin-bottom: 36px; display: flex; align-items: center; gap: 14px; font-size: 0.88rem; color: #cbd5e1; text-align: left;">
-      <span style="font-size: 1.6rem;">💡</span>
-      <div>
-        <strong style="color: #38bdf8;">Windows Permission or SmartScreen Prompt?</strong><br>
-        If Windows notes "Permission needed" or blocks the download on first run: right-click <code>Dawko-AI-Windows.exe</code> &rarr; select <strong>Properties</strong> &rarr; check <strong>"Unblock"</strong> at the bottom right &rarr; click <strong>OK</strong>. You can also download the <a href="Dawko-AI-Windows.zip" download style="color: #38bdf8; font-weight: 600; text-decoration: underline;">Dawko Windows ZIP package</a>.
+        <div class="card-btn" style="background: rgba(255, 255, 255, 0.08); color: #cbd5e1; border-color: rgba(255, 255, 255, 0.15);">Zero Download Required</div>
       </div>
     </div>
 
     <!-- Live Banter Showcase -->
     <div class="quote-box">
-      <div class="quote-title">Broadcast Sample • Recorded Live from Blighty</div>
+      <div class="quote-head">
+        <div class="quote-title">Broadcast Sample • Recorded Live from Blighty</div>
+        <div class="live-soundwave">
+          <span class="wave-bar wb-2"></span>
+          <span class="wave-bar wb-4"></span>
+          <span class="wave-bar wb-1"></span>
+          <span class="wave-bar wb-3"></span>
+        </div>
+      </div>
       <p class="quote-text">
         "Dawko reckons that taking our wireless transmissions along for a weekend by the seaside is a thoroughly scrumptious prospect, old chap. <span class="quote-rhyme">With a stiff upper lip and a dignified grip, not a trace of composure is permitted to slip.</span> Everything in this computing crate remains completely tickety-boo."
       </p>
     </div>
 
-    <!-- Key Features -->
-    <div class="features-list">
-      <div class="feature-item">
-        <div class="feature-icon">🎙️</div>
-        <div>
-          <div class="feature-head">The BBC Voice</div>
-          <div class="feature-sub">Pristine Received Pronunciation with dignified broadcast cadence.</div>
-        </div>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon">🇬🇧</div>
-        <div>
-          <div class="feature-head">1940s Slang</div>
-          <div class="feature-sub">Seasoned with terms like <em>topping</em>, <em>Blighty</em>, and <em>rotter</em>.</div>
-        </div>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon">⚽</div>
-        <div>
-          <div class="feature-head">Live Football</div>
-          <div class="feature-sub">Real-time scores, standings, and match commentary.</div>
-        </div>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon">⚡</div>
-        <div>
-          <div class="feature-head">100% Free (£0)</div>
-          <div class="feature-sub">Powered by Gemini 3 Flash with zero subscription costs.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Share Bar -->
-    <div class="share-bar">
-      <div class="share-info">
-        Spread the cheer: share Dawko AI with friends on social media!
-      </div>
-      <div class="share-buttons">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdawko77.github.io%2Fdawko%2F" target="_blank" rel="noreferrer" class="btn-fb">
-          Share on Facebook
-        </a>
-      </div>
-    </div>
-
     <footer>
-      Dawko AI • Created with pride in Blighty • Powered by Google GenAI & FastAPI
+      Dawko AI &copy; 2026 • Crafted with British Wit, BBC Decorum & Cutting-Edge Agentic Intelligence
     </footer>
   </div>
 </body>
